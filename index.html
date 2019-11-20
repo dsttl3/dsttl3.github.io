@@ -1,18 +1,204 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
 <head>
-  <title>dsttl3-github</title>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?eadee4c4e3a3b125fe36d79a6c9c7971";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<meta http-equiv="refresh" content="0;url=https://github.com/dsttl3/" />
+    <title>dsttl3</title>
+    <meta charset="utf-8">
+    <style>
+        body,
+        ul,
+        li,
+        div,
+        a,
+        p,
+        input,
+        bottom,
+        samp {
+            padding: 0;
+            margin: 0;
+            background: none;
+        }
+
+        body {
+            /* background-image: url('img/macbg.jpg'); */
+            background:url(img/macbg.jpg)  no-repeat center center;
+            background-size:cover;
+            background-attachment:fixed;
+        }
+
+        .d_top {
+            background: #66ccff66;
+            width: 100%;
+            height: 32px;
+            position: fixed;
+            top: 0px;
+        }
+
+        .d_top_main {
+            width: 100%;
+            height: 32px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .top_ul {
+            margin-left: 10px;
+            height: 32px;
+            list-style-type: none;
+            display: flex;
+        }
+
+        .top_ul li {
+            padding: 5px 10px 2px 10px;
+            text-align: center;
+        }
+
+        .t_r_ul {
+            position: fixed;
+            right: 18px;
+            list-style-type: none;
+            display: flex;
+            height: 32px;
+        }
+
+        /* 底部 */
+        .d_bottom {
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            bottom: 0px;
+        }
+
+        .d_b_ul {
+            list-style-type: none;
+            display: flex;
+            width: 55%;
+            margin: 0 auto;
+            padding: 0 32px 0 32px;
+            background: #eeeeeeca;
+            border-radius: 32px 32px 0 0;
+            min-width: 720px;
+        }
+
+        .d_b_ul li {
+            padding: 23px;
+            height: 100px;
+            flex: auto;
+            text-align: center;
+        }
+
+
+        .d_b_ul li img{
+				cursor: pointer;
+				transition: all 0.6s;
+			}
+        .d_b_ul li img:hover{
+			transform: scale(2);
+        }
+        .main {
+            margin: 0;
+        }
+        .main_center{
+            width: 100%;
+            position: fixed;
+            top: 18%;
+            text-align: center;
+        }
+        .m_c_d {
+            background: #ffffff88;
+            width: 450px;
+            margin: 0 auto;
+            padding: 32px;
+            border-radius: 32px;
+        }
+        
+        .in_text {
+            width: 380px;
+            padding: 6px 32px;
+            font-size: 26px;
+            border: none;
+            outline: none;
+            border-style:solid;
+	        border-width:1px;
+            border-radius: 32px;
+            background: #ffffffcc;
+        }
+        .sub_btn {
+            width: 200px;
+            padding: 6px;
+            margin-top: 32px;
+            font-size: 26px;
+            border: none;
+            outline: none;
+            border-style:solid;
+	        border-width:1px;
+            border-radius: 8px;
+            background: #66ccff66;
+        }
+    </style>
+    <!-- 时间js -->
+    <script>　
+        var t = null;
+        t = setTimeout(time, 1000);
+        function time() {
+            clearTimeout(t);
+            dt = new Date();
+            var y = dt.getFullYear();
+            var mo = dt.getMonth() + 1;
+            var d = dt.getDate();
+            var h = dt.getHours();
+            var m = dt.getMinutes();
+            var s = dt.getSeconds();
+            document.getElementById("timeShow").innerHTML = mo + "月" + d + "日" + h + ":" + m + ":" + s ;
+            t = setTimeout(time, 1000);
+        }
+    </script>
 </head>
+
 <body>
+    <div class="main">
+        <div class="d_top">
+            <div class="d_top_main">
+                <ul class="top_ul">
+                    <li><embed src="ico/苹果.svg" type="image/svg+xml" /></li>
+                    <li>主页</li>
+                    <li>推荐</li>
+                    <li>帮助</li>
+                    <li>关于</li>
+                    <li>联系</li>
+                </ul>
+                <ul class="t_r_ul">
+                    <li style="padding: 5px;">
+                        <label id="timeShow">正在载入：</label>
+                    </li>
+                    <li>
+                            <embed src="ico/搜索.svg" type="image/svg+xml" style="padding: 8px;" />
+                        </li>
+                    <li>
+                            <embed src="ico/菜单.svg" type="image/svg+xml" style="padding: 8px;" />
+                       </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="main_center">
+            <div class="m_c_d">
+                <form action="https://l3.pub/s">
+                    <img src="img/googlelogo_color_272x92dp.png" />
+                    <input class="in_text" type="text" name="q" placeholder="今天想搜点啥呢😊" autofocus /><br>
+                    <button class="sub_btn" type="submit" >搜索一下</button>
+                </form>
+            </div>
+        </div>
+        <div class="d_bottom">
+            <ul class="d_b_ul">
+                <li><a href="#"><img src="ico/QQ.png"></img></a></li>
+                <li><a href="https://dsttl3.github.io"><img src="ico/github.png"></img></a></li>
+                <li><a href="#"><img src="ico/QQ空间.png"></img></a></li>
+                <li><a href="#"><img src="ico/微信.png"></img></a></li>
+                <li><a href="https://weibo.com/dstt360"><img src="ico/微博.png"></img></a></li>
+                <li><a href="#"><img src="ico/支付宝.png"></img></a></li>
+            </ul>
+        </div>
+    </div>
 </body>
-</html>

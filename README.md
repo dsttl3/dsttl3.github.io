@@ -1,4 +1,5 @@
 # dsttl3.github.io
 
-#### 跳转网址
-[dsttl3](https://www.dsttl3.cn)
+简单的Google自定义搜索
+https://l3.pub
+

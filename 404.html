@@ -18,10 +18,10 @@
       .then(data => {
         if (data == null || data == "null") {
           console.log('获取链接错误，正跳转至主页', data);
-          paragraph.textContent = "获取链接错误，正跳转至主页 -> " + "https://www.dsttl3.cn";
+          paragraph.textContent = "获取链接错误，即将跳转至主页 -> " + "https://www.dsttl3.cn";
           setTimeout(function () {
             window.location = "https://www.dsttl3.cn";
-          }, 3000);
+          }, 10000);
         } else {
           console.log('获取到链接', data);
           paragraph.textContent = "正在跳转至 -> " + data;
@@ -35,7 +35,7 @@
         paragraph.textContent = "发生错误 -> " + error;
         setTimeout(function () {
           window.location = "https://www.dsttl3.cn";
-        }, 3000);
+        }, 10000);
       });
   </script>
 </body>

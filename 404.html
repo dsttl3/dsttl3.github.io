@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>示例页面</title>
-  </head>
-  <body>
-    <script>
-    var url = pathname = window.location.pathname;
+
+<head>
+  <meta charset="UTF-8">
+  <title>页面跳转</title>
+</head>
+
+<body>
+  <p id="text"></p>
+  <script>
+    var url = pathname = window.location.pathname.substring(1);
     console.log('获取到链接', url);
-      // 通过 fetch 函数获取数据
-    fetch('https://bt.dsttl3.cn/redis/Get?index=4&key=dsttl3')
-        .then(response => response.text())
-        .then(data => {
-            console.log('获取到链接', data);
-        })
-        .catch(error => {
-          console.log('发生错误', error);
-        });
-    </script>
-  </body>
+    // 通过 fetch 函数获取数据
+    fetch('https://bt.dsttl3.cn/redis/Get?index=4&key=' + url)
+      .then(response => response.text())
+      .then(data => {
+        console.log('获取到链接', data);
+        const paragraph = document.getElementById('text'); // 获取元素引用
+        paragraph.textContent = data;
+        setTimeout(function () {
+          window.location = data;
+        }, 3000);
+      })
+      .catch(error => {
+        console.log('发生错误', error);
+      });
+  </script>
+</body>
+
 </html>

@@ -67,32 +67,47 @@
             border-style: solid;
             border-width: 1px;
             border-radius: 8px;
-            background: #66ccffdd;
+            background: #ffffff;
         }
 
 
         .search-box ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			position: absolute;
-			background-color: #ffffffdd;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			box-shadow: 1px 1px 5px #ccc;
-			z-index: 2; /* 添加z-index属性 */
-			top: 100%; /* 将下拉菜单置于搜索框下方 */
-			width: 450px;
-		}
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            background-color: #ffffffdd;
+            /* border: 1px solid #ccc; */
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px #ccc;
+            z-index: 2;
+            /* 添加z-index属性 */
+            /* top: 100%; */
+            /* 将下拉菜单置于搜索框下方 */
+            width: 450px;
+        }
 
-		.search-box li {
-			padding: 5px;
-			cursor: pointer;
-		}
+        .search-box li {
+            padding: 5px;
+            cursor: pointer;
+        }
 
-		.search-box li:hover {
-			background-color: #ccc;
-		}
+        .search-box li:hover {
+            background-color: #ccc;
+        }
+
+        .site-info {
+            padding: 30px;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .site-info a {
+            text-decoration: none;
+            color: inherit;
+        }
     </style>
 </head>
 
@@ -103,46 +118,50 @@
             <div class="search-box">
                 <form action="https://google.dsttl3.cn/">
                     <img src="https://wb.dsttl3.cn/img/googlelogo.png" />
-                    <input id="search-input" type="text" name="sou" placeholder="" autofocus autocomplete="off"/>
+                    <input id="search-input" type="text" name="sou" placeholder="" autofocus autocomplete="off" />
                     <ul id="search-results"></ul>
                     <button class="sub_btn" type="submit">搜索</button>
-                    
+
                 </form>
             </div>
         </div>
     </div>
     <script>
-		const searchInput = document.getElementById('search-input');
-		const searchResults = document.getElementById('search-results');
-		searchInput.addEventListener('input', (e) => {
-			const searchTerm = e.target.value.trim();
-			if (searchTerm === '') {
-				searchResults.innerHTML = '';
-				return;
-			}
-			fetch(`http://localhost:8080/MyAPI_war/Baidu?s=${searchTerm}`)
-				.then(response => response.json())
-				.then(data => {
-					const suggestions = data.g;
-					const resultsHTML = suggestions.map(suggestion => `<li>${suggestion.q}</li>`).join('');
-					searchResults.innerHTML = resultsHTML;
-					// 点击提示词替换输入框内容
-					searchResults.querySelectorAll('li').forEach(item => {
-						item.addEventListener('click', () => {
-							searchInput.value = item.textContent;
-							searchResults.innerHTML = '';
-						})
-					})
-				})
-				.catch(error => {
-					console.error(error);
-				});
-		});
-		// 点击页面其他位置隐藏下拉菜单
-		document.addEventListener('click', (e) => {
-			if (e.target !== searchInput && e.target !== searchResults) {
-				searchResults.innerHTML = '';
-			}
-		});
-	</script>
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.trim();
+            if (searchTerm === '') {
+                searchResults.innerHTML = '';
+                return;
+            }
+            fetch(`https://google.dsttl3.cn/Sugrec?wd=${searchTerm}`)
+                .then(response => response.json())
+                .then(data => {
+                    const suggestions = data.g;
+                    const resultsHTML = suggestions.map(suggestion => `<li>${suggestion.q}</li>`).join('');
+                    searchResults.innerHTML = resultsHTML;
+                    // 点击提示词替换输入框内容
+                    searchResults.querySelectorAll('li').forEach(item => {
+                        item.addEventListener('click', () => {
+                            searchInput.value = item.textContent;
+                            searchResults.innerHTML = '';
+                        })
+                    })
+                })
+                .catch(error => {
+                    console.error(error);
+                });
+        });
+        // 点击页面其他位置隐藏下拉菜单
+        document.addEventListener('click', (e) => {
+            if (e.target !== searchInput && e.target !== searchResults) {
+                searchResults.innerHTML = '';
+            }
+        });
+    </script>
+
+    <div class="site-info">
+        <p>© 2023 <a href="https://www.dsttl3.cn">dsttl3.cn</a> All rights reserved.</p>
+    </div>
 </body>

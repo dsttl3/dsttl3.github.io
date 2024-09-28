@@ -1,171 +1,86 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns:wb="http://open.weibo.com/wb">
 
 <head>
-    <title>dsttl3的Google搜索</title>
-    <meta charset="utf-8">
-    <link rel="apple-touch-icon" href="ico/icon.png">
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2502608784851731"
-     crossorigin="anonymous"></script>
-     
-    <style>
-        body,
-        ul,
-        li,
-        div,
-        a,
-        p,
-        input,
-        bottom,
-        samp {
-            padding: 0;
-            margin: 0;
-            background: none;
-        }
-
-        body {
-            background: url(https://api.vvhan.com/api/bing?type=sj) no-repeat center center;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .main {
-            margin: 0;
-        }
-
-        .main_center {
-            width: 100%;
-            position: fixed;
-            top: 18%;
-            text-align: center;
-        }
-
-        .search-box {
-            background: #ffffffdd;
-            width: 450px;
-            margin: 0 auto;
-            padding: 32px;
-            border-radius: 32px;
-        }
-
-        #search-input {
-            width: 380px;
-            padding: 6px 32px;
-            font-size: 22px;
-            border: none;
-            outline: none;
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 32px;
-            background: #ffffffdd;
-        }
-
-        .sub_btn {
-            width: 200px;
-            padding: 6px;
-            margin-top: 32px;
-            font-size: 22px;
-            border: none;
-            outline: none;
-            border-style: solid;
-            border-width: 1px;
-            border-radius: 8px;
-            background: #ffffff;
-        }
-
-
-        .search-box ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            position: absolute;
-            background-color: #ffffffdd;
-            /* border: 1px solid #ccc; */
-            border-radius: 15px;
-            box-shadow: 1px 1px 5px #ccc;
-            z-index: 2;
-            /* 添加z-index属性 */
-            /* top: 100%; */
-            /* 将下拉菜单置于搜索框下方 */
-            width: 450px;
-        }
-
-        .search-box li {
-            padding: 5px;
-            cursor: pointer;
-        }
-
-        .search-box li:hover {
-            background-color: #ccc;
-        }
-
-        .site-info {
-            padding: 30px;
-            position: fixed;
-            bottom: 0;
-            text-align: center;
-            width: 100%;
-        }
-
-        .site-info a {
-            text-decoration: none;
-            color: inherit;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>超话一键签到 | APP下载</title>
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+	<meta name="description" content="超话一键签到，没有官方一键签到的各种限制，不需要前一天访问，不需要7级，没有数量限制，真正的一键签到。">
+	<meta name="keywords" content="超话一键签到, 超话自动签到, 微博超话签到, 超话签到, 超话, 签到">
+	<script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.compat.css" />
+	<script>
+	    var path = location.search;
+	    if(path == "?v=k1" || path == "?v=z1"){
+	        // 创建一个列表并赋值
+            let myList = [
+            'https://wb.dsttl3.cn/doc/', 
+            'https://wb.dsttl3.cn', 
+            'https://wb.dsttl3.cn/doc/text/', 
+            'https://wb.dsttl3.cn/app/Android.html', 
+            'https://wb.dsttl3.cn/app/iOS.html'
+            ];
+            // 生成一个随机整数作为索引
+            let randomIndex = Math.floor(Math.random() * myList.length);
+            let randomData = myList[randomIndex];
+            // 随机时间
+            let ms = Math.floor(Math.random() * (15000 - 3000 + 1)) + 3000;
+	        setTimeout(function(){
+	            window.location = randomData;
+	        }, ms);
+	    }
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?bad4599bfb0f469555e968b9a6723c30";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 </head>
 
 <body>
-    <div class="main">
+    <script type="text/javascript">
+	var logo_app = "img/logo.png";
+	var title_app = "超话一键签到";
+	var shouji_app = "img/app_sp.png";
+	var banb_app = "版本：1.1.1丨大小：25.2M&nbsp;&nbsp;&nbsp;&nbsp;";
+	var fabu_app = "发布时间：2022-12-13";
+	var dibu_app = "<a style='color: gray' href='https://dsttl3.cn'>©2023&nbsp;&nbsp;dsttl3.cn</a>";
+	var ewm_app = "img/qrimg.png";
+	var xiaz_app = "https://wb.dsttl3.cn/app/Android.html";
+	var xiaz_ios = "https://wb.dsttl3.cn/app/iOS.html";
+	var text_app = "使用这款软件就可以轻松实现微博超话一键签到了，彻底解放双手，没有官方一键签到的各种限制，不需要前一天访问，不需要7级，没有数量限制，真正的一键签到。iOS版本还支持自动签到，快来下载体验吧。";
+	var win_width = $(window).width();
+	win_app();
+	function win_app() {
+		win_width = $(window).width();
+		if (win_width < 700) {
+			$("body").html('<div id="boox_web"><div><div class="logo_web"><img src="' + logo_app 
+				+ '"><p>' + title_app + '</p></div><a href="' + xiaz_app + '"><div class="xiazai_web">安卓下载</div></a><a href="' + xiaz_ios + '"><div class="xiazai_web">苹果下载</div></a><div id="banben_web"><p class="text fs">' + banb_app 
+					+ '</p><p class="text">' + fabu_app + '</p></div></div><div class="fixed_web">' + dibu_app + '</div><wb:share-button appkey="3028447309" addition="number" type="button" ralateUid="1850606085" default_text="%23超话一键签到%23 支持苹果、安卓，不需要等级限制，没有数量限制，快来体验吧。" pic="https%3A%2F%2Fwb.dsttl3.cn%2Fdoc%2Fimg%2Fimg_index.png"></wb:share-button></div>');
+		} else {
+			$("body").html('<h1><a href="https://wb.dsttl3.cn"><img id="floating-image" src="img/chaohua.png" alt="超话一键签到"></a></h1><div id="boox_pc"><div class="left_pc animated bounceInLeft"><img src="' + shouji_app 
+				+ '"></div><div class="right_pc animated bounceInRight"><div class="right_logo_pc"><img src="' + logo_app 
+					+ '"><div><p class="right_title_pc">' + title_app + '</p><p class="right_span_pc">微博超话签到</p></div></div><div class="right_text_pc">' + text_app 
+						+ '</div><div class="right_banb_pc">' + banb_app + fabu_app + '</div><div class="right_ewm_pc"><img src="' + ewm_app 
+							+ '"><a href="' + xiaz_app + '"><div class="right_xiazai_pc">安卓下载</div></a>&nbsp;&nbsp;<a href="' + xiaz_ios + '"><div class="right_xiazai_pc">苹果下载</div></a></div></div><div class="fixed_web">' + dibu_app + '</div><wb:share-button appkey="3028447309" addition="number" type="button" ralateUid="1850606085" default_text="%23超话一键签到%23 支持苹果、安卓，不需要等级限制，没有数量限制，快来体验吧。" pic="https%3A%2F%2Fwb.dsttl3.cn%2Fdoc%2Fimg%2Fimg_index.png"></wb:share-button></div>');
+		}
+	}
+	function if_app() {
+		if (win_width == $(window).width()) {
 
-        <div class="main_center">
-            <div class="search-box">
-                <form action="https://google.dsttl3.cn/">
-                    <img src="https://wb.dsttl3.cn/img/googlelogo.png" />
-                    <input id="search-input" type="text" name="sou" placeholder="" autofocus autocomplete="off" />
-                    <ul id="search-results"></ul>
-                    <button class="sub_btn" type="submit">搜索</button>
-
-                </form>
-            </div>
-        </div>
-    </div>
-    <script>
-        const searchInput = document.getElementById('search-input');
-        const searchResults = document.getElementById('search-results');
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.trim();
-            if (searchTerm === '') {
-                searchResults.innerHTML = '';
-                return;
-            }
-            fetch(`https://google.dsttl3.cn/Sugrec?wd=${searchTerm}`)
-                .then(response => response.json())
-                .then(data => {
-                    const suggestions = data.g;
-                    const resultsHTML = suggestions.map(suggestion => `<li>${suggestion.q}</li>`).join('');
-                    searchResults.innerHTML = resultsHTML;
-                    // 点击提示词替换输入框内容
-                    searchResults.querySelectorAll('li').forEach(item => {
-                        item.addEventListener('click', () => {
-                            searchInput.value = item.textContent;
-                            searchResults.innerHTML = '';
-                        })
-                    })
-                })
-                .catch(error => {
-                    console.error(error);
-                });
-        });
-        // 点击页面其他位置隐藏下拉菜单
-        document.addEventListener('click', (e) => {
-            if (e.target !== searchInput && e.target !== searchResults) {
-                searchResults.innerHTML = '';
-            }
-        });
-    </script>
-
-    <div class="site-info">
-        <p>© 2023 <a href="https://www.dsttl3.cn">dsttl3.cn</a> All rights reserved.</p>
-    </div>
+		} else {
+			win_app();
+		}
+	}
+	setInterval("if_app()", 500);
+</script>
 </body>
+
+
+</html>

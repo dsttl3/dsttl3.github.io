@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://wb.dsttl3.cn/Sitemap.xml

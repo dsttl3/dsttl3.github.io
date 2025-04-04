@@ -1,5 +1,69 @@
 #EXTM3U 
-#EXTINF:-1,tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://epg.v1.mk/logo/CCTV1.png" group-title="常看",CCTV-1
+#EXTINF:-1 ,CCTV1
 http://111.12.102.79:6610/PLTV/77777777/224/3221225654/index.m3u8?servicetype=1&IASHttpSessionId=OTT
-#EXTINF:-1,tvg-id="广西卫视" tvg-name="广西卫视" tvg-logo="https://epg.v1.mk/logo/广西卫视.png" group-title="常看",广西卫视
-http://111.12.102.79:6610/PLTV/77777777/224/3221225767/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,CCTV2
+http://111.12.102.79:6610/PLTV/77777777/224/3221225657/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,CCTV5
+http://111.12.102.79:6610/PLTV/77777777/224/3221225660/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,CCTV8
+http://111.12.102.79:6610/PLTV/77777777/224/3221225716/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,CCTV11
+http://111.12.102.79:6610/PLTV/77777777/224/3221225739/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,CCTV12
+http://111.12.102.79:6610/PLTV/77777777/224/3221225645/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,CCTV13
+http://111.12.102.79:6610/PLTV/77777777/224/3221225742/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,CCTV14
+http://111.12.102.79:6610/PLTV/77777777/224/3221225648/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,CCTV15
+http://111.12.102.79:6610/PLTV/77777777/224/3221225693/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,北京卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225651/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,广东卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225666/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,天津卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225675/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,吉林卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225678/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,青海卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225705/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,南方卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225748/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,内蒙古卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225751/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,海南卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225752/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,陕西卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225754/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,四川卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225757/index.m3u8?servicetype=1&IASHttpSessionId=OTT  
+#EXTINF:-1 ,甘肃卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225764/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,广西卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225767/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,贵州卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225770/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,河北卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225773/index.m3u8?servicetype=1&IASHttpSessionId=OTT   
+#EXTINF:-1 ,宁夏卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225782/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,山西卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225785/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,新疆卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225788/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,优漫卡通
+http://111.12.102.79:6610/PLTV/77777777/224/3221225791/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,云南卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225794/index.m3u8?servicetype=1&IASHttpSessionId=OTT
+#EXTINF:-1 ,嘉佳卡通
+http://111.12.102.79:6610/PLTV/77777777/224/3221225797/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,西藏卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225800/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,河南卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225806/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,山东教育卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225708/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,广东珠江
+http://111.12.102.79:6610/PLTV/77777777/224/3221225717/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,纯享4K
+http://111.12.102.79:6610/PLTV/77777777/224/3221225726/index.m3u8?servicetype=1&IASHttpSessionId=OTT 

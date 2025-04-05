@@ -17,6 +17,8 @@ http://111.12.102.79:6610/PLTV/77777777/224/3221225742/index.m3u8?servicetype=1&
 http://111.12.102.79:6610/PLTV/77777777/224/3221225648/index.m3u8?servicetype=1&IASHttpSessionId=OTT
 #EXTINF:-1 ,CCTV15
 http://111.12.102.79:6610/PLTV/77777777/224/3221225693/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
+#EXTINF:-1 ,广西卫视
+http://111.12.102.79:6610/PLTV/77777777/224/3221225767/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
 #EXTINF:-1 ,北京卫视
 http://111.12.102.79:6610/PLTV/77777777/224/3221225651/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
 #EXTINF:-1 ,广东卫视
@@ -31,8 +33,6 @@ http://111.12.102.79:6610/PLTV/77777777/224/3221225752/index.m3u8?servicetype=1&
 http://111.12.102.79:6610/PLTV/77777777/224/3221225757/index.m3u8?servicetype=1&IASHttpSessionId=OTT  
 #EXTINF:-1 ,甘肃卫视
 http://111.12.102.79:6610/PLTV/77777777/224/3221225764/index.m3u8?servicetype=1&IASHttpSessionId=OTT
-#EXTINF:-1 ,广西卫视
-http://111.12.102.79:6610/PLTV/77777777/224/3221225767/index.m3u8?servicetype=1&IASHttpSessionId=OTT 
 #EXTINF:-1 ,贵州卫视
 http://111.12.102.79:6610/PLTV/77777777/224/3221225770/index.m3u8?servicetype=1&IASHttpSessionId=OTT
 #EXTINF:-1 ,河北卫视
